@@ -10,9 +10,6 @@ class Config:
         pass
 
 
-
-
-
 class ProdConfig(Config):
     '''
     Production configuration child class
@@ -21,8 +18,6 @@ class ProdConfig(Config):
         Config: The parent Configuration class with general configuration settings
     '''
     pass
-# class TestConfig(Config):
-#     SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://lulumutuli:lulu@localhost/watchlist_test'
 
 
 class DevConfig(Config):
@@ -33,7 +28,7 @@ class DevConfig(Config):
         Config: The parent configuration class with General configuration settings
     '''
 
-    # password=lulu
+
     DEBUG = True
 
 config_options = {
