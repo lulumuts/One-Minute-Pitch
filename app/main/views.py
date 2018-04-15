@@ -1,5 +1,6 @@
 from flask import render_template
 from . import main
+from .forms import PitchForm
 
 
 @main.route('/')
@@ -12,3 +13,12 @@ def index():
 
 
     return  render_template('index.html', title=title)
+
+@main.route('/pickup')
+def pickup():
+
+    '''
+    View movie page function that returns the movie details page and its data
+    '''
+    
+    return render_template('pickup.html')
